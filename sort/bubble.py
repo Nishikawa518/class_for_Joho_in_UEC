@@ -22,8 +22,12 @@ def bubblesort(a):
         j-=1
 
 #main
-args = sys.argv
-arry = [5,1,4,6,0,3,2,7,]
-print (arry)
-bubblesort(arry)
-print (arry)
+def main():
+    args = sys.argv
+    arry = [5,1,4,6,0,3,2,7,]
+    print (arry)
+    bubblesort(arry)
+    print (arry)
+
+if __name__ == "__main__":
+    main()
