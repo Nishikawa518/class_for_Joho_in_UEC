@@ -10,7 +10,7 @@ def selectsort(a):
     i=0
     n = len(a)
     while i<n:
-        min_index = a[i]
+        min_index = i
         j=i+1
         while j<n:
             if a[j] < a[min_index]:

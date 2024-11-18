@@ -10,7 +10,7 @@ def selectsort(a):
     i=0
     n = len(a)
     while i<n:
-        min_index = a[i]
+        min_index = i
         j=  #jの開始番号を入れる
         while j<n: 
             #最小値を探す
