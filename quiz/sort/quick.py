@@ -8,20 +8,17 @@ def swap(arry,a,b):
 
 def quicksort(a,start,end):
     #arry[0] = arry[1]
-    if end <= start:
+    if : #要素数が1つ以下であるとき何も行わずに終了
         return
-    swap(a,end,random.randint(start, end))
+    swap(a,end,random.randint(start, end)) #pivotを設定
     pivot = a[end]
     s=start
     k=start
     while k<end:
-        if a[k]<=pivot:
-            swap(a,s,k)
-            s=s+1
-        k=k+1
+        #a[pivot]以下と以上に2分割し、以上の一番左の要素のインデックスをsとする
     swap(a,end,s)
-    quicksort(a,start,s-1)
-    quicksort(a,s+1,end)
+    #pivot以下の要素についてquicksort
+    #pivotより大きいの要素についてquicksort
     return
 
 # main関数

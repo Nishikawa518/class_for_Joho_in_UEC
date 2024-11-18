@@ -6,20 +6,7 @@ def swap(arry,a,b):
     arry[b] = tmp
 
 def bubblesort(a):
-    #arry[0] = arry[1]
-    done = False
-    while done!=True:
-        done = True
-        i= 0
-        j = len(arry)-2
-        print (j)
-        while j>i:
-            if arry[i] > arry[i+1]:
-                swap(arry,i,i+1)
-                done = False
-                print (arry)
-            i+=1
-        j-=1
+
 
 #main
 def main():
