@@ -12,7 +12,7 @@ def insertsort(a):
     while i<n:
         j=i-1
         while j>=0:
-            print(j)
+            #print(j)
             if a[j]<a[j+1]:
                 break
             swap(a,j,j+1)

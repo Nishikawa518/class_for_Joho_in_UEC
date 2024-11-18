@@ -11,13 +11,13 @@ def bubblesort(a):
     while done!=True:
         done = True
         i= 0
-        j = len(arry)-2
-        print (j)
+        j = len(a)-2
+        #print (j)
         while j>i:
-            if arry[i] > arry[i+1]:
-                swap(arry,i,i+1)
+            if a[i] > a[i+1]:
+                swap(a,i,i+1)
                 done = False
-                print (arry)
+                #print (a)
             i+=1
         j-=1
 
