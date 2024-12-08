@@ -42,7 +42,7 @@ def quicksort(a,start,end):
 def search(a,val):
     left=0
     right=len(a)-1
-    while left<right:
+    while left<=right:
         m=(left+right)//2
         if val<a[m]:
             right=m-1
@@ -62,6 +62,7 @@ def main():
     quicksort(arry,0,len(arry)-1)
     print(arry)
     print(search(arry,36))
+    print(linear_search(arry,36))
     #linear_search(arry,0,len(arry)-1)
     #print (arry)
 
