@@ -6,15 +6,8 @@ def initstack(s):
     for i in range(1,MAX_SIZE):
         s.append('0')
 
-def is_empty(s):
-    if s[0]==1:
-        return True
-    else:
-        return False
-    
-
 def push(val,s):
-    if s[0]==MAX_SIZE:
+    if :#条件式を加える
         print("stack overflow")
         sys.exit(1)
     else:
@@ -23,7 +16,7 @@ def push(val,s):
         
 
 def pop(s):
-    if s[0]==1:
+    if :#条件式を加える
         print("stack underflow")
         print(s)
         sys.exit(1)
@@ -34,33 +27,21 @@ def pop(s):
         #s[s[0]]='0'
         #return val
         
-def check_kokka(val,s):
-    popped=pop(s)
-    if (popped=='(' and val==')')or(popped=='{' and val=='}')or(popped=='[' and val==']'):
-        #print("1")
-        return
-    else:
-        #print(popped)
-        #print(val)
-        print("miss")
-        sys.exit(1)
+
 
 
 def main():
     args = sys.argv
     s=[]
     initstack(s)
-    for i in range(1,len(args)):
-        if args[i]=='(' or args[i]=='{' or args[i]=='[':
-            push(args[i],s)
-        else:
-            check_kokka(args[i],s)
+    push('a',s)
+    push('b',s)
+    print(pop(s))
+    push('c',s)
+    print(pop(s))
+    print(pop(s))
     #print(pop(s))
-    #print(s)
-    if is_empty(s)==True:
-        print("OK")
-    else:
-        print("stack is not empty!")
+    print(s)
 
 
     #print(random.randint(0, 7))  # 0から7の間の乱数を生成して表示

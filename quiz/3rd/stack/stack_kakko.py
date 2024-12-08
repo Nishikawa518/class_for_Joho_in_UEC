@@ -14,30 +14,15 @@ def is_empty(s):
     
 
 def push(val,s):
-    if s[0]==MAX_SIZE:
-        print("stack overflow")
-        sys.exit(1)
-    else:
-        s[s[0]]=val
-        s[0]+=1
+    #stack.pyからコピーする
         
 
 def pop(s):
-    if s[0]==1:
-        print("stack underflow")
-        print(s)
-        sys.exit(1)
-    else:
-        s[0]-=1
-        return s[s[0]]
-        #val = s[s[0]]
-        #s[s[0]]='0'
-        #return val
+    #stack.pyからコピーする
         
 def check_kokka(val,s):
     popped=pop(s)
-    if (popped=='(' and val==')')or(popped=='{' and val=='}')or(popped=='[' and val==']'):
-        #print("1")
+    if :#条件式を加える、(hint:elifを加えると書きやすい)
         return
     else:
         #print(popped)
